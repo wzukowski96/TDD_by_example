@@ -1,6 +1,7 @@
 public abstract class Money {
     protected int amount;
 
+
 //    public boolean equals(Object object) {
 //        Money money= (Money) object;
 //        return amount == money.amount;
@@ -23,4 +24,6 @@ public abstract class Money {
     static Money franc(int amount){
         return new Franc(amount);
     }
+
+    abstract String currency();
 }
