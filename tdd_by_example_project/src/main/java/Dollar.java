@@ -1,6 +1,6 @@
-public class Dollar {
+public class Dollar extends Money{
 
-    private int amount;
+   // private int amount;
 
     Dollar(int amount) {
         this.amount = amount;
