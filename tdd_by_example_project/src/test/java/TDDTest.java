@@ -103,5 +103,9 @@ public class TDDTest {
         assertEquals(new Object[] {"abc"}, new Object[] {"abc"});
     }
 
+    public void testIdentityRate() {
+        assertEquals(1, new Bank().rate("USD", "USD"));
+    }
+
 
 }
