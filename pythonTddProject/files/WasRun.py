@@ -9,6 +9,9 @@ class WasRun(TestCase):
         exec("self." + self.name + "()")
     def testMethod(self):
         self.wasRun = 1
+    def setUp(self):
+        self.wasRun= None
+        self.wasSetUp= 1
 
 
 test = WasRun("testMethod")
