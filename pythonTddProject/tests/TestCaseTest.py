@@ -49,9 +49,14 @@ class TestCaseTest(TestCase):
 
     def setUp(self):
         self.result= TestResult()
+    # def testTemplateMethod(self):
+    #     test= WasRun("testMethod")
+    #     test.run(self.result)
+    #     assert("setUp testMethod tearDown " == test.log)
     def testTemplateMethod(self):
         test= WasRun("testMethod")
-        test.run(self.result)
+        result= TestResult()
+        test.run(result)
         assert("setUp testMethod tearDown " == test.log)
     def testResult(self):
         test= WasRun("testMethod")
