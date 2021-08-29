@@ -190,4 +190,13 @@ public class TDDTest {
         assertEquals(7, plus(3,4));
     }
 
+
+
+    @Test
+    public void testSum2() {
+        Exercise exercise = new Exercise();
+      //  assertEquals(5, exercise.sum(new int[] {5}));
+        assertEquals(12, exercise.sum(new int[] {5, 7}));
+    }
+
 }
