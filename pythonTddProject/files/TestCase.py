@@ -5,6 +5,10 @@ class TestCase:
         exec("self." + self.name + "()")
     def setUp(self):
         pass
-    def run(self):
+    def run(self, result):
+        result.testStarted()
         self.setUp()
         exec("self." + self.name + "()")
+        self.tearDown()
+    def tearDown(self):
+        pass
