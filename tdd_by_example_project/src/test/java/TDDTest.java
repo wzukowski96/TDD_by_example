@@ -174,4 +174,20 @@ public class TDDTest {
 //        }
 //    }
 
+
+    private int plus(int augend, int addend) {
+        return augend + addend;
+    }
+
+//    @Test
+//    public void testSum() {
+//        assertEquals(4, plus(3, 1));
+//    }
+
+    @Test
+    public void testSum() {
+        assertEquals(4, plus(3, 1));
+        assertEquals(7, plus(3,4));
+    }
+
 }
