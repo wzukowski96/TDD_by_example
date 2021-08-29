@@ -1,4 +1,8 @@
 import org.junit.Test;
+
+import java.io.File;
+import java.io.IOException;
+
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -144,6 +148,30 @@ public class TDDTest {
 //    public void testPlusSameCurrencyReturnsMoney() {
 //        Expression sum= Money.dollar(1).plus(Money.dollar(1));
 //        assertTrue(sum instanceof Money);
+//    }
+
+
+    private class FullFile extends File {
+        public FullFile(String path) {
+            super(path);
+        }
+        public boolean createNewFile() throws IOException {
+            throw new IOException();
+        }
+    }
+
+//    @Test
+//    public void testFileSystemError() {
+//        File f= new File("foo") {
+//            public boolean createNewFile() throws IOException {
+//                throw new IOException();
+//            }
+//        };
+//        try {
+//            saveAs(f);
+//            fail();
+//        } catch (IOException e) {
+//        }
 //    }
 
 }
