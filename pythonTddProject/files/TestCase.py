@@ -1,3 +1,6 @@
+from files.TestResult import TestResult
+
+
 class TestCase:
     def __init__(self, name):
         self.name= name
@@ -5,10 +8,12 @@ class TestCase:
         exec("self." + self.name + "()")
     def setUp(self):
         pass
-    def run(self, result):
+    def run(self):
+        result= TestResult()
         result.testStarted()
         self.setUp()
         exec("self." + self.name + "()")
         self.tearDown()
+        return result
     def tearDown(self):
         pass
