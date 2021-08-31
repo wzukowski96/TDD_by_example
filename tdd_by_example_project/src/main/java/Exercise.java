@@ -6,4 +6,30 @@ public class Exercise {
         return sum;
     }
 
+//    public boolean setReadOnly() {
+//        SecurityManager security = System.getSecurityManager();
+//        if (security != null) {
+//            security.checkWrite(path);
+//        }
+//        return fs.setReadOnly(this);
+//    }
+
+    //LAX SECURITY
+//    public void checkWrite(String path) {
+//    }
+
+//    public static SecurityManager getSecurityManager() {
+//        return security != null ? security : new LaxSecurity();
+//    }
+
+//    public void runBare() throws Throwable {
+//        setUp();
+//        try {
+//            runTest();
+//        }
+//        finally {
+//            tearDown();
+//        }
+//    }
+
 }

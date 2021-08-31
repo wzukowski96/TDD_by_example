@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
@@ -198,5 +199,34 @@ public class TDDTest {
       //  assertEquals(5, exercise.sum(new int[] {5}));
         assertEquals(12, exercise.sum(new int[] {5, 7}));
     }
+
+//    private Rectangle empty;
+//    public void setUp() {
+//        empty= new Rectangle(0,0,0,0);
+//    }
+//    @Test
+//    public void testEmpty() {
+//        assertTrue(empty.isEmpty());
+//    }
+//    @Test
+//    public void testWidth() {
+//        assertEquals(0.0, empty.getWidth(), 0.0);
+//    }
+
+//    @Test
+//    public void testRate() {
+//        exchange.addRate("USD", "GBP", 2);
+//        int rate= exchange.findRate(“USD”, “GBP”);
+//        assertEquals(2, rate);
+//    }
+//
+//    @Test
+//    public void testMissingRate() {
+//        try {
+//            exchange.findRate("USD", “GBP");
+//                    fail();
+//        } catch (IllegalArgumentException expected) {
+//        }
+//    }
 
 }
